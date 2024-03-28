@@ -10,4 +10,4 @@ This project has satisfy the objectives such as understanding various loop state
 * shellcheck style was used
 
 ## Author
-Olowosuyi Temitope
+Valentine Okoye
