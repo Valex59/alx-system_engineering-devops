@@ -1,2 +1,5 @@
 #!/usr/bin/env ruby
-puts ARGV[0].scan(/[A-Z]*/).join
+
+# Match only capital letters
+
+puts ARGV[0].scan(/[A-Z]/).join
