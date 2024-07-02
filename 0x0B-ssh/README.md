@@ -1,6 +1,6 @@
-0x0B. SSH
+# 0x0B. SSH
 
-# Objectives
+## Objectives
 
 - What is a server
 - Where servers usually live
