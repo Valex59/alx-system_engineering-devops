@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# My SSH configuration file for the local SSH client
+# My SSH client configuration must be configured to use the private
+# key ~/.ssh/school
+# My SSH client configuration must be configured to refuse to authenticate
+# using a password
+
+Host 222184-web-01
+    HostName 3.94.181.152
+    User ubuntu
+    PasswordAuthentication no
+    IdentityFile ~/.ssh/school
