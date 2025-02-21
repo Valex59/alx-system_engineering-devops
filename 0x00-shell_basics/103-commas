@@ -1,0 +1,2 @@
+#!/bin/bash
+(ls -Ap | grep -vE '^(\.\/|\.\.$)' && ls -Ap | grep -E '^(\.\/|\.\.$)') | sort -V | paste -sd ',' - && echo
