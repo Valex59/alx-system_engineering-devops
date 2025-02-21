@@ -1,2 +1,2 @@
 #!/bin/bash
-{ls -Ap | grep -E '^\.\.?$'; ls -Ap | grep -vE '^\.\.?$' | sort -V; } | tr '\n' ',' | sed 's/,$/\n/'
+ls -Ap | awk '/^\.\.?$/ {print; next} {files = files $0 ","} END {print substr(files, 1, length(files)-1)}'
