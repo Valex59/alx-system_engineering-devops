@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -Ap | awk 'NR==1{x=$0;print;next} NR==2{y=$0;print;next} {z=z","$0} END{print substr(z,2)}'
+ls -Ap | sort -V | paste -sd "," -
