@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -Ap | sort -V | awk 'BEGIN{print ".", ".."} {printf "%s%s",sep,$0; sep=","} END{print ""}'
+(ls -Ap && echo . && echo ..) | sort -V | paste -sd ","
